@@ -74,7 +74,7 @@ print(-x)  # [-1, -2, -3, -4]
 print(+x)  # [1, 2, 3, 4]
 print(x['Nome'])  # Caio
 print(x['Idade'])  # None
-x['Altura'] = 173  # Adiciona a chave "Altura" e seu valoe "173" ao dicionária "pessoa"
+x['Altura'] = 173  # Chama o método mágico __setitem__ e adiciona a chave "Altura" e seu valoe "173" ao dicionária "pessoa"
 print(x.pessoa)  # {'Nome': 'Caio', 'Idade': None, 'Altura': 173}
 del x['Nome']  # Chama o __delitem__ apaga a chave passada
 print(x.pessoa)  # {'Idade': None, 'Altura': 173}
